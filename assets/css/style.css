@@ -1,0 +1,51 @@
+
+body
+{
+    background:black;
+   
+}
+
+#container
+{   color:white;
+    border: 5px solid white;
+    width:1200px;
+    height: 730px;
+    margin:0 auto;
+    
+    
+}
+
+h1
+{
+    font-size: 50px;
+    color:red;
+    text-align:center;
+}
+
+#rightwrapper
+{
+    float:right;
+    border: 3px dashed white;
+    right:0;
+    width: 597px;
+    height: 600px;
+    margin:0;
+}
+
+#leftwrapper
+{
+    left:0;
+    border: 3px dashed white;
+    width:597px;
+    height: 600px;
+    padding:0;
+    margin:0;
+}
+
+#headertext
+{
+    font-size:20px;
+    color:white;
+    line-height: 20px;
+    padding-top:100px;
+}
