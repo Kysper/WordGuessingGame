@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Code Red</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="assets/javascript/game.js"></script>
+    <meta charset="UTF-8">
+    <title>Code Red!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../WordGuessingGame/assets/css/style.css" />
+    <script src="../WordGuessingGame/assets/javascript/game.js"></script>
 </head>
-<body id="bgcolor"></body>
-    <div id="container">
-            <div> <h1 > Code Red!</h1></div>
-            <div id="rightwrapper">
-                    <div id="headertext">
-                    Welcome to code red can you figure out the launch codes before the enemy reaches your bunker?
-                    <em>Hit space to start playing!</em>
-                    </div>
-                </div>
 
-            <div id="leftwrapper">
-
+<body>
+    <div class="container">
+        <img id="logo" src="../WordGuessingGame/assets/image/logo.png" alt="Code Red Image" />
+        <div id="animate-box">
+            <div id="bunker">
+                <img src="../WordGuessingGame/assets/image/bunker.png" />
             </div>
+            <div>
+                
+                 <img id="enemyImage" src="../WordGuessingGame/assets/image/enemy.png" alt="Enemy Convoy"/> </div>
 
 
+        </div>
 
+        <div class="row">
+            <div class="col-md-6 gameplay-column">
+                <h2 id="winText"></h2>
+                <div>
+                <img id="missile" src="../WordGuessingGame/assets/image/missile.png" />
+                <img id="missle-launcher" src="../WordGuessingGame/assets/image/misslelauncher.png" />
+                </div>    
+            </div>
+            <div class="col-md-6 gameplay-column">
+                <h2>Press Any Key to Get Started!</h2>
+                <h4>Wins</h4>
+                <h5 id="wins-link"></h5>
+                <h4>Current Word</h4>
+                <h3 id="current-word"></h3>
+                <h4>Guesses Remaining</h4>
+                <h6 id="guesses-remain"></h6>
+                <h4>Letters Guessed</h4>
+                <h3 id="guessed-letters"></h3>
+            </div>
+        </div>
     </div>
+    <script>
+        gameReset();
+        updateScreen();
+    </script>
 
 </body>
+
 </html>
