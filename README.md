@@ -1,5 +1,11 @@
 # WordGuessingGame
 #Added needed HTML, CSS and javascript files to the repository.
+#Created a system using arrays to hold the letters and push a _ in place of the letter
+# Have users guess the letters and have a function that checks if the letters are in the guessWord variable
+# Swaps out the _ with the letter as they are pressed 
+# Every missed letter decrements the guessesleft 
+# when letters are guessed or tries are 0 then win or lose
+
 // Create an Array with a list of themed words for the game
 
 // Create an empty array to house the wrong guesses
